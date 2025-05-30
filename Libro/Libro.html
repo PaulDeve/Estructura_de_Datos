@@ -139,8 +139,40 @@ Facultad de Ingeniería Estadística e Informática
 <section id="introducción" class="level2">
 <h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
 <p>Las <strong>estructuras de datos</strong> son la columna vertebral de la programación eficiente. Permiten <strong>almacenar, organizar y manipular datos</strong> de forma sistemática dentro de un programa. Su correcta aplicación facilita la resolución de problemas complejos, mejora el rendimiento del software y permite crear algoritmos más optimizados.</p>
+<style>
+  .img-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .img-container::before,
+  .img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .img-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container img {
+    display: block;
+    max-width: 100%;
+  }
+</style>
 <p align="center">
-<img src="img/est.png" alt="" width="300">
+<span class="img-container"> <img src="img/est.png" alt="" width="300"> </span>
 </p>
 <p>Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas).</p>
 <p>El dominio de las estructuras de datos es fundamental para cualquier programador, ya que <strong>define cómo se accede, se modifica y se procesa la información</strong> dentro de un programa. Son indispensables tanto en pequeños programas como en sistemas a gran escala, desde videojuegos hasta redes neuronales artificiales.</p>
@@ -163,6 +195,7 @@ Facultad de Ingeniería Estadística e Informática
 <blockquote class="blockquote">
 <p><em>Una variable es un espacio en memoria que guarda un valor específico, como la edad de una persona.</em></p>
 </blockquote>
+<hr>
 <p><strong>Ejemplo 2: Uso de un array para guardar múltiples valores</strong></p>
 <div class="sourceCode" id="cb2"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb2-1"><a href="#cb2-1" aria-hidden="true" tabindex="-1"></a>Copiar</span>
 <span id="cb2-2"><a href="#cb2-2" aria-hidden="true" tabindex="-1"></a>Editar</span>
@@ -177,6 +210,7 @@ Facultad de Ingeniería Estadística e Informática
 <blockquote class="blockquote">
 <p><em>Un array permite almacenar una colección de datos del mismo tipo.</em></p>
 </blockquote>
+<hr>
 <p><strong>Ejemplo 3: Uso de una estructura para organizar datos relacionados</strong></p>
 <div class="sourceCode" id="cb3"><pre class="sourceCode cpp code-with-copy"><code class="sourceCode cpp"><span id="cb3-1"><a href="#cb3-1" aria-hidden="true" tabindex="-1"></a>Copiar</span>
 <span id="cb3-2"><a href="#cb3-2" aria-hidden="true" tabindex="-1"></a>Editar</span>
@@ -196,9 +230,45 @@ Facultad de Ingeniería Estadística e Informática
 <blockquote class="blockquote">
 <p><em>Una estructura agrupa distintos tipos de datos bajo una misma entidad.</em></p>
 </blockquote>
+<hr>
 </section>
 <section id="i-operadores" class="level2">
 <h2 class="anchored" data-anchor-id="i-operadores">I Operadores</h2>
+<style>
+  .img-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .img-container::before,
+  .img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .img-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container img {
+    display: block;
+    max-width: 100%;
+  }
+</style>
+<p align="center">
+<span class="img-container"> <img src="img/ope.png" alt="" width="300"> </span>
+</p>
 <p>En programación, los <strong>operadores</strong> son símbolos que permiten manipular datos y variables a través de cálculos, comparaciones o asignaciones. Funcionan como el “vocabulario” matemático y lógico que permite expresar acciones y decisiones dentro del código. Hay operadores de distintos tipos: <strong>aritméticos</strong> (<code>+</code>, <code>-</code>, <code>*</code>, <code>/</code>), <strong>lógicos</strong> (<code>&amp;&amp;</code>, <code>||</code>, <code>!</code>), <strong>relacionales</strong> (<code>&gt;</code>, <code>&lt;</code>, <code>==</code>) y <strong>de asignación</strong> (<code>=</code>, <code>+=</code>, <code>-=</code>).</p>
 <p>El uso adecuado de los operadores permite crear expresiones poderosas y precisas, capaces de tomar decisiones automáticas o ejecutar cálculos complejos con una sola línea de código.</p>
 <hr>

@@ -24,6 +24,7 @@
 
 ## Índice
 
+
 - [Índice](#índice)
 - [Introducción](#introducción)
 - [Ejemplos Básicos en C++](#ejemplos-básicos-en-c)
@@ -47,8 +48,43 @@
 
 Las **estructuras de datos** son la columna vertebral de la programación eficiente. Permiten **almacenar, organizar y manipular datos** de forma sistemática dentro de un programa. Su correcta aplicación facilita la resolución de problemas complejos, mejora el rendimiento del software y permite crear algoritmos más optimizados.
 
+<style>
+  .img-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .img-container::before,
+  .img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .img-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container img {
+    display: block;
+    max-width: 100%;
+  }
+</style>
+
 <p align="center">
-  <img src="img/est.png" alt="" width="300"/>
+    <span class="img-container">
+        <img src="img/est.png" alt="" width="300"/>
+    </span>
 </p>
 
 Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas).
@@ -72,7 +108,10 @@ int main() {
     return 0;
 }
 ```
+
 > *Una variable es un espacio en memoria que guarda un valor específico, como la edad de una persona.*
+
+---
 
 **Ejemplo 2: Uso de un array para guardar múltiples valores**
 ```cpp
@@ -88,7 +127,10 @@ int main() {
 }
 ```
 
+
 > *Un array permite almacenar una colección de datos del mismo tipo.*
+
+---
 
 **Ejemplo 3: Uso de una estructura para organizar datos relacionados**
 ```cpp
@@ -108,10 +150,52 @@ int main() {
     return 0;
 }
 ```
+
 > *Una estructura agrupa distintos tipos de datos bajo una misma entidad.*
 
+---
 
 ## I Operadores
+
+<style>
+  .img-container {
+    position: relative;
+    display: inline-block;
+  }
+
+  .img-container::before,
+  .img-container::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    width: 50px;
+    height: 100%;
+    z-index: 2;
+    pointer-events: none;
+  }
+
+  .img-container::before {
+    left: 0;
+    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container::after {
+    right: 0;
+    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
+  }
+
+  .img-container img {
+    display: block;
+    max-width: 100%;
+  }
+</style>
+
+<p align="center">
+  <span class="img-container">
+    <img src="img/ope.png" alt="" width="300"/>
+  </span>
+</p>
+
 
 En programación, los **operadores** son símbolos que permiten manipular datos y variables a través de cálculos, comparaciones o asignaciones. Funcionan como el "vocabulario" matemático y lógico que permite expresar acciones y decisiones dentro del código. Hay operadores de distintos tipos: **aritméticos** (`+`, `-`, `*`, `/`), **lógicos** (`&&`, `||`, `!`), **relacionales** (`>`, `<`, `==`) y **de asignación** (`=`, `+=`, `-=`).
 
