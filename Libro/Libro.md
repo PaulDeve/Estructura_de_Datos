@@ -26,6 +26,7 @@
 
 - [Índice](#índice)
 - [Introducción](#introducción)
+- [Ejemplos Básicos en C++](#ejemplos-básicos-en-c)
 - [I Operadores](#i-operadores)
 - [II Estructuras De Control](#ii-estructuras-de-control)
 - [III Funciones](#iii-funciones)
@@ -44,172 +45,70 @@
 
 ## Introducción
 
-Las **estructuras de datos** permiten almacenar, organizar y manipular información eficientemente. Son la base de la resolución de problemas computacionales complejos.
+Las **estructuras de datos** son la columna vertebral de la programación eficiente. Permiten **almacenar, organizar y manipular datos** de forma sistemática dentro de un programa. Su correcta aplicación facilita la resolución de problemas complejos, mejora el rendimiento del software y permite crear algoritmos más optimizados.
 
-**Ejemplo 1**  
- *Crear una lista enlazada que almacene nombres y los imprima en **C++***
+<p align="center">
+  <img src="img/est.png" alt="" width="300"/>
+</p>
 
+Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas).
+
+El dominio de las estructuras de datos es fundamental para cualquier programador, ya que **define cómo se accede, se modifica y se procesa la información** dentro de un programa. Son indispensables tanto en pequeños programas como en sistemas a gran escala, desde videojuegos hasta redes neuronales artificiales.
+
+> *Aprender estructuras de datos no es solo aprender a codificar: es aprender a pensar estratégicamente en cómo tratar los datos.*
+
+---
+
+## Ejemplos Básicos en C++
+
+ **Ejemplo 1: Uso de una variable**
 ```cpp
 #include <iostream>
 using namespace std;
 
-struct Nodo {
+int main() {
+    int edad = 25;
+    cout << "Edad: " << edad << endl;
+    return 0;
+}
+```
+> *Una variable es un espacio en memoria que guarda un valor específico, como la edad de una persona.*
+
+**Ejemplo 2: Uso de un array para guardar múltiples valores**
+```cpp
+Copiar
+Editar
+#include <iostream>
+using namespace std;
+
+int main() {
+    int notas[3] = {15, 18, 20};
+    cout << "Primera nota: " << notas[0] << endl;
+    return 0;
+}
+```
+
+> *Un array permite almacenar una colección de datos del mismo tipo.*
+
+**Ejemplo 3: Uso de una estructura para organizar datos relacionados**
+```cpp
+Copiar
+Editar
+#include <iostream>
+using namespace std;
+
+struct Persona {
     string nombre;
-    Nodo* siguiente;
+    int edad;
 };
 
 int main() {
-    Nodo* primero = new Nodo{"Ana", nullptr};
-    primero->siguiente = new Nodo{"Luis", nullptr};
-    primero->siguiente->siguiente = new Nodo{"Carlos", nullptr};
-
-    Nodo* actual = primero;
-    while (actual != nullptr) {
-        cout << actual->nombre << endl;
-        actual = actual->siguiente;
-    }
-
+    Persona alumno = {"Lucía", 21};
+    cout << "Nombre: " << alumno.nombre << ", Edad: " << alumno.edad << endl;
     return 0;
 }
-
 ```
-**Ejemplo 2**  
- *Crear un array de enteros y calcular su suma en **Python***
-
-```python
-class Nodo:
-    def __init__(self, nombre):
-        self.nombre = nombre
-        self.siguiente = None
-
-# Crear nodos
-n1 = Nodo("Ana")
-n2 = Nodo("Luis")
-n3 = Nodo("Carlos")
-
-# Enlazar nodos
-n1.siguiente = n2
-n2.siguiente = n3
-
-# Recorrer lista
-actual = n1
-while actual:
-    print(actual.nombre)
-    actual = actual.siguiente
-
-```
-**Ejemplo 3**  
- *Crear un array de enteros y calcular su suma en **Java***
-
-```java
-class Nodo {
-    String nombre;
-    Nodo siguiente;
-
-    Nodo(String nombre) {
-        this.nombre = nombre;
-        this.siguiente = null;
-    }
-}
-
-public class ListaEnlazada {
-    public static void main(String[] args) {
-        Nodo primero = new Nodo("Ana");
-        primero.siguiente = new Nodo("Luis");
-        primero.siguiente.siguiente = new Nodo("Carlos");
-
-        Nodo actual = primero;
-        while (actual != null) {
-            System.out.println(actual.nombre);
-            actual = actual.siguiente;
-        }
-    }
-}
-
-```
-**Ejemplo 4**  
- *Crear un array de enteros y calcular su suma en **JavaScript***
-
-```javascript
-class Nodo {
-  constructor(nombre) {
-    this.nombre = nombre;
-    this.siguiente = null;
-  }
-}
-
-// Crear nodos
-let n1 = new Nodo("Ana");
-let n2 = new Nodo("Luis");
-let n3 = new Nodo("Carlos");
-
-// Enlazar nodos
-n1.siguiente = n2;
-n2.siguiente = n3;
-
-// Recorrer lista
-let actual = n1;
-while (actual !== null) {
-  console.log(actual.nombre);
-  actual = actual.siguiente;
-}
-
-```
-***Ejemplo 5**  
- *Crear un array de enteros y calcular su suma en **C#***
-
-```csharp
-using System;
-
-class Nodo {
-    public string Nombre;
-    public Nodo Siguiente;
-
-    public Nodo(string nombre) {
-        Nombre = nombre;
-        Siguiente = null;
-    }
-}
-
-class Program {
-    static void Main() {
-        Nodo primero = new Nodo("Ana");
-        primero.Siguiente = new Nodo("Luis");
-        primero.Siguiente.Siguiente = new Nodo("Carlos");
-
-        Nodo actual = primero;
-        while (actual != null) {
-            Console.WriteLine(actual.Nombre);
-            actual = actual.Siguiente;
-        }
-    }
-}
-```
-**conclusión**
-
-Los ejemplos presentados demuestran claramente que las **estructuras de datos**, como las listas enlazadas, son fundamentales en la programación, independientemente del lenguaje utilizado. En todos los casos, se ha implementado una lista enlazada simple que almacena nombres y los imprime, reflejando un patrón común: **un nodo con un valor y una referencia al siguiente**.
-
-Aunque la sintaxis varía entre **C++**, **Python**, **Java**, **JavaScript** y **C#**, la lógica de construcción y recorrido de una lista enlazada permanece constante. Esto pone en evidencia que **la estructura mental del programador es más importante que el lenguaje en sí**.
-
----
-
-**Puntos Clave**
-
-- **Reutilización del concepto:** Todos los lenguajes permiten implementar listas enlazadas, lo cual demuestra la **versatilidad del concepto de nodos y punteros/referencias**.
-
-- **Pensamiento estructurado:** Cada código refleja la importancia de **dividir datos en elementos (nodos)** conectados lógicamente, favoreciendo el diseño de algoritmos eficientes.
-
-- **Independencia del lenguaje:** Una estructura bien entendida puede adaptarse a múltiples lenguajes, lo que fortalece el perfil de un programador polivalente.
-
----
-
-**Reflexión Final**
-
-Aprender estructuras de datos no se trata solo de programar, sino de **entender cómo los datos se organizan y se mueven internamente**. Esto te permite desarrollar software más eficiente, escalable y mantenible, sin importar si usas **C++**, **Python**, **Java** o cualquier otro lenguaje moderno.
-
-> *Dominar estructuras de datos es dominar el corazón de la programación.*
-
----
+> *Una estructura agrupa distintos tipos de datos bajo una misma entidad.*
 
 
 ## I Operadores
@@ -1460,11 +1359,11 @@ Las pilas son la memoria inmediata del programa. Son eficientes, controladas y m
 > *Son como una pila de platos: solo puedes sacar el de arriba… y eso es exactamente lo que necesitas.*
 
 ---
-njmmn
 
 ## XII Recursión
 
 **Concepto:**
+
 La **recursión** es una técnica de programación en la que una función se llama a sí misma para resolver un problema. Cada llamada se resuelve con un caso más pequeño del problema original, hasta llegar a un caso base que se puede resolver directamente.
 
 La recursión es elegante y poderosa. Se utiliza para resolver problemas que pueden dividirse en subproblemas similares, como factoriales, secuencias de Fibonacci, búsqueda binaria, recorridos en árboles, y más.
@@ -1578,6 +1477,171 @@ Los **operadores** nos permitieron dar instrucciones básicas. Las **estructuras
 Con los **punteros y referencias**, dimos un paso hacia el control de memoria y manipulación avanzada de variables. Los operadores `&` y `*` nos abrieron la puerta a comprender cómo se gestiona la información en los niveles más profundos de la máquina.
 
 Más allá, descubrimos el poder de las **listas enlazadas**, **listas dobles** y **listas circulares**, estructuras dinámicas que se adaptan, crecen y se transforman durante la ejecución. Las **colas** y **pilas** nos mostraron cómo modelar el comportamiento de procesos en la vida real, como la atención por turnos o el historial de acciones. Finalmente, la **recursión** nos permitió resolver problemas complejos de forma elegante y matemática, descomponiéndolos en partes más pequeñas.
+
+---
+
+**Ejemplo 1**  
+ *Crear una lista enlazada que almacene nombres y los imprima en **C++***
+
+```cpp
+#include <iostream>
+using namespace std;
+
+struct Nodo {
+    string nombre;
+    Nodo* siguiente;
+};
+
+int main() {
+    Nodo* primero = new Nodo{"Ana", nullptr};
+    primero->siguiente = new Nodo{"Luis", nullptr};
+    primero->siguiente->siguiente = new Nodo{"Carlos", nullptr};
+
+    Nodo* actual = primero;
+    while (actual != nullptr) {
+        cout << actual->nombre << endl;
+        actual = actual->siguiente;
+    }
+
+    return 0;
+}
+
+```
+**Ejemplo 2**  
+ *Crear un array de enteros y calcular su suma en **Python***
+
+```python
+class Nodo:
+    def __init__(self, nombre):
+        self.nombre = nombre
+        self.siguiente = None
+
+# Crear nodos
+n1 = Nodo("Ana")
+n2 = Nodo("Luis")
+n3 = Nodo("Carlos")
+
+# Enlazar nodos
+n1.siguiente = n2
+n2.siguiente = n3
+
+# Recorrer lista
+actual = n1
+while actual:
+    print(actual.nombre)
+    actual = actual.siguiente
+
+```
+**Ejemplo 3**  
+ *Crear un array de enteros y calcular su suma en **Java***
+
+```java
+class Nodo {
+    String nombre;
+    Nodo siguiente;
+
+    Nodo(String nombre) {
+        this.nombre = nombre;
+        this.siguiente = null;
+    }
+}
+
+public class ListaEnlazada {
+    public static void main(String[] args) {
+        Nodo primero = new Nodo("Ana");
+        primero.siguiente = new Nodo("Luis");
+        primero.siguiente.siguiente = new Nodo("Carlos");
+
+        Nodo actual = primero;
+        while (actual != null) {
+            System.out.println(actual.nombre);
+            actual = actual.siguiente;
+        }
+    }
+}
+
+```
+**Ejemplo 4**  
+ *Crear un array de enteros y calcular su suma en **JavaScript***
+
+```javascript
+class Nodo {
+  constructor(nombre) {
+    this.nombre = nombre;
+    this.siguiente = null;
+  }
+}
+
+// Crear nodos
+let n1 = new Nodo("Ana");
+let n2 = new Nodo("Luis");
+let n3 = new Nodo("Carlos");
+
+// Enlazar nodos
+n1.siguiente = n2;
+n2.siguiente = n3;
+
+// Recorrer lista
+let actual = n1;
+while (actual !== null) {
+  console.log(actual.nombre);
+  actual = actual.siguiente;
+}
+
+```
+***Ejemplo 5**  
+ *Crear un array de enteros y calcular su suma en **C#***
+
+```csharp
+using System;
+
+class Nodo {
+    public string Nombre;
+    public Nodo Siguiente;
+
+    public Nodo(string nombre) {
+        Nombre = nombre;
+        Siguiente = null;
+    }
+}
+
+class Program {
+    static void Main() {
+        Nodo primero = new Nodo("Ana");
+        primero.Siguiente = new Nodo("Luis");
+        primero.Siguiente.Siguiente = new Nodo("Carlos");
+
+        Nodo actual = primero;
+        while (actual != null) {
+            Console.WriteLine(actual.Nombre);
+            actual = actual.Siguiente;
+        }
+    }
+}
+```
+**conclusión**
+
+Los ejemplos presentados demuestran claramente que las **estructuras de datos**, como las listas enlazadas, son fundamentales en la programación, independientemente del lenguaje utilizado. En todos los casos, se ha implementado una lista enlazada simple que almacena nombres y los imprime, reflejando un patrón común: **un nodo con un valor y una referencia al siguiente**.
+
+Aunque la sintaxis varía entre **C++**, **Python**, **Java**, **JavaScript** y **C#**, la lógica de construcción y recorrido de una lista enlazada permanece constante. Esto pone en evidencia que **la estructura mental del programador es más importante que el lenguaje en sí**.
+
+---
+
+**Puntos Clave**
+
+- **Reutilización del concepto:** Todos los lenguajes permiten implementar listas enlazadas, lo cual demuestra la **versatilidad del concepto de nodos y punteros/referencias**.
+
+- **Pensamiento estructurado:** Cada código refleja la importancia de **dividir datos en elementos (nodos)** conectados lógicamente, favoreciendo el diseño de algoritmos eficientes.
+
+- **Independencia del lenguaje:** Una estructura bien entendida puede adaptarse a múltiples lenguajes, lo que fortalece el perfil de un programador polivalente.
+
+---
+
+**Reflexión Final**
+
+Aprender estructuras de datos no se trata solo de programar, sino de **entender cómo los datos se organizan y se mueven internamente**. Esto te permite desarrollar software más eficiente, escalable y mantenible, sin importar si usas **C++**, **Python**, **Java** o cualquier otro lenguaje moderno.
+
+> *Dominar estructuras de datos es dominar el corazón de la programación.*
 
 ---
 
