@@ -48,38 +48,7 @@
 
 Las **estructuras de datos** son la columna vertebral de la programación eficiente. Permiten **almacenar, organizar y manipular datos** de forma sistemática dentro de un programa. Su correcta aplicación facilita la resolución de problemas complejos, mejora el rendimiento del software y permite crear algoritmos más optimizados.
 
-<style>
-  .img-container {
-    position: relative;
-    display: inline-block;
-  }
 
-  .img-container::before,
-  .img-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 50px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  .img-container::before {
-    left: 0;
-    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-  }
-
-  .img-container::after {
-    right: 0;
-    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-  }
-
-  .img-container img {
-    display: block;
-    max-width: 100%;
-  }
-</style>
 
 <p align="center">
     <span class="img-container">
@@ -157,38 +126,6 @@ int main() {
 
 ## I Operadores
 
-<style>
-  .img-container {
-    position: relative;
-    display: inline-block;
-  }
-
-  .img-container::before,
-  .img-container::after {
-    content: "";
-    position: absolute;
-    top: 0;
-    width: 50px;
-    height: 100%;
-    z-index: 2;
-    pointer-events: none;
-  }
-
-  .img-container::before {
-    left: 0;
-    background: linear-gradient(to right, rgba(255,255,255,1), rgba(255,255,255,0));
-  }
-
-  .img-container::after {
-    right: 0;
-    background: linear-gradient(to left, rgba(255,255,255,1), rgba(255,255,255,0));
-  }
-
-  .img-container img {
-    display: block;
-    max-width: 100%;
-  }
-</style>
 
 <p align="center">
   <span class="img-container">
@@ -289,6 +226,12 @@ int main() {
 ## II Estructuras De Control
 
 Las **estructuras de control** son la columna vertebral de la lógica en la programación. Permiten decidir qué instrucciones se ejecutan, en qué momento y cuántas veces. Gracias a ellas, un programa puede responder a condiciones cambiantes o repetir procesos sin intervención humana.
+
+<p align="center">
+  <span class="img-container">
+    <img src="img/cont.png" alt="" width="300"/>
+  </span>
+</p>
 
 Existen dos grandes tipos:  
 - **Condicionales**, como `if`, `else` o `switch`, que permiten elegir entre distintas rutas de ejecución.  
