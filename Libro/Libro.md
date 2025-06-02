@@ -25,36 +25,50 @@
 ## Índice
 
 
-- [Índice](#índice)
-- [Introducción](#introducción)
-- [Ejemplos Básicos en C++](#ejemplos-básicos-en-c)
-- [I Operadores](#i-operadores)
-- [II Estructuras De Control](#ii-estructuras-de-control)
-- [III Funciones](#iii-funciones)
-- [IV Arrays](#iv-arrays)
-- [V Punteros y Referencias](#v-punteros-y-referencias)
-- [VI Operadores tipo \& y \*](#vi-operadores-tipo--y-)
-- [VII Listas Enlazadas](#vii-listas-enlazadas)
-- [VIII Listas Doblemente Enlazadas](#viii-listas-doblemente-enlazadas)
-- [IX Listas Circulares](#ix-listas-circulares)
-- [X Colas (Queues)](#x-colas-queues)
-- [XI Pilas (Stacks)](#xi-pilas-stacks)
-- [XII Recursión](#xii-recursión)
-- [Conclusión](#conclusión)
+- [🧰 Entornos de Desarrollo](#-entornos-de-desarrollo)
+  - [🔍 ¿Qué es un Entorno de Desarrollo?](#-qué-es-un-entorno-de-desarrollo)
+  - [🧩 Componentes típicos de un Entorno de Desarrollo](#-componentes-típicos-de-un-entorno-de-desarrollo)
+  - [🧪 Tipos de Entornos de Desarrollo](#-tipos-de-entornos-de-desarrollo)
+  - [🌟 Ejemplos Populares de Entornos de Desarrollo](#-ejemplos-populares-de-entornos-de-desarrollo)
+  - [✅ Ventajas de los Entornos de Desarrollo](#-ventajas-de-los-entornos-de-desarrollo)
+  - [❌ Desventajas de los Entornos de Desarrollo](#-desventajas-de-los-entornos-de-desarrollo)
+  - [🚀 Recomendación según el nivel](#-recomendación-según-el-nivel)
+- [⚙️ Compiladores de Código](#️-compiladores-de-código)
+  - [🔍 ¿Qué es un Compilador?](#-qué-es-un-compilador)
+  - [🧠 ¿Cómo funciona un Compilador?](#-cómo-funciona-un-compilador)
+  - [🛠️ Tipos de Compiladores](#️-tipos-de-compiladores)
+  - [🌟 Ejemplos de Compiladores Populares](#-ejemplos-de-compiladores-populares)
+  - [✅ Ventajas de los Compiladores](#-ventajas-de-los-compiladores)
+  - [❌ Desventajas de los Compiladores](#-desventajas-de-los-compiladores)
+  - [🤔 Compilador vs Intérprete](#-compilador-vs-intérprete)
+  - [💡 Compiladores Online (Web-Based)](#-compiladores-online-web-based)
+  - [I Operadores](#i-operadores)
+  - [II Estructuras De Control](#ii-estructuras-de-control)
+  - [III Funciones](#iii-funciones)
+  - [IV Arrays](#iv-arrays)
+  - [V Punteros y Referencias](#v-punteros-y-referencias)
+  - [VI Operadores tipo \& y \*](#vi-operadores-tipo--y-)
+  - [VII Listas Enlazadas](#vii-listas-enlazadas)
+  - [VIII Listas Doblemente Enlazadas](#viii-listas-doblemente-enlazadas)
+  - [IX Listas Circulares](#ix-listas-circulares)
+  - [X Colas (Queues)](#x-colas-queues)
+  - [XI Pilas (Stacks)](#xi-pilas-stacks)
+  - [XII Recursión](#xii-recursión)
+  - [Conclusión](#conclusión)
 
 ---
 
 ## Introducción
 
+<div style="overflow: auto;">
+
+<img src="img/est.png" alt="Estructuras de datos" width="250" align="right" style="float: right; margin-left: 15px; margin-bottom: 10px;" />
+
 Las **estructuras de datos** son la columna vertebral de la programación eficiente. Permiten **almacenar, organizar y manipular datos** de forma sistemática dentro de un programa. Su correcta aplicación facilita la resolución de problemas complejos, mejora el rendimiento del software y permite crear algoritmos más optimizados.
 
+Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas). Estas estructuras no solo gestionan información, sino que permiten crear soluciones más limpias, escalables y adaptables a contextos reales.
 
-
-<p align="center">
-    <span class="img-container">
-        <img src="img/est.png" alt="" width="300"/>
-    </span>
-</p>
+</div>
 
 Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas).
 
@@ -123,6 +137,175 @@ int main() {
 > *Una estructura agrupa distintos tipos de datos bajo una misma entidad.*
 
 ---
+
+
+# 🧰 Entornos de Desarrollo
+
+## 🔍 ¿Qué es un Entorno de Desarrollo?
+
+Un **Entorno de Desarrollo** es un conjunto de herramientas y servicios que permiten a los programadores escribir, depurar, probar y mantener código de manera más eficiente. Su propósito es facilitar el proceso de creación de software, proporcionando interfaces amigables, depuradores, compiladores y otros recursos útiles.
+
+También se le conoce como **IDE** (*Integrated Development Environment* o Entorno de Desarrollo Integrado) cuando incluye varias herramientas en una sola aplicación.
+
+---
+
+## 🧩 Componentes típicos de un Entorno de Desarrollo
+
+- **Editor de código fuente** – Donde se escribe el código.
+- **Compilador o intérprete** – Para traducir el código a lenguaje de máquina.
+- **Depurador (Debugger)** – Para detectar errores y ejecutar paso a paso.
+- **Control de versiones** – Para manejar cambios en el código (como Git).
+- **Simuladores/Emuladores** – Para probar el software en entornos virtuales.
+- **Terminal/Consola** – Para ejecutar comandos del sistema o scripts.
+
+---
+
+## 🧪 Tipos de Entornos de Desarrollo
+
+| Tipo de Entorno                | Descripción                                                        |
+|-------------------------------|---------------------------------------------------------------------|
+| **IDE (Entorno Integrado)**   | Herramienta todo-en-uno: editor, compilador, depurador, etc.       |
+| **Entorno Local**             | Instalado directamente en el computador del desarrollador.         |
+| **Entorno Web (Online IDE)**  | Basado en la nube, accesible desde navegadores.                    |
+| **Entorno Remoto**            | Corre en servidores o máquinas virtuales remotas.                  |
+| **Entorno Móvil**             | Para aplicaciones móviles (Android Studio, Xcode).                 |
+
+---
+
+## 🌟 Ejemplos Populares de Entornos de Desarrollo
+
+| Entorno/IDE        | Lenguajes Soportados              | Sistema Operativo        |
+|---------------------|-----------------------------------|---------------------------|
+| **Visual Studio**   | C++, C#, Python, JavaScript       | Windows, macOS            |
+| **Eclipse**         | Java, C++, PHP                    | Multiplataforma           |
+| **PyCharm**         | Python                            | Multiplataforma           |
+| **NetBeans**        | Java, PHP, C/C++                  | Multiplataforma           |
+| **Android Studio**  | Kotlin, Java                      | Windows, macOS, Linux     |
+| **Xcode**           | Swift, Objective-C                | Solo macOS                |
+| **Code::Blocks**    | C, C++                            | Windows, Linux, macOS     |
+| **VS Code**         | Soporta muchos con extensiones    | Multiplataforma           |
+| **Replit**          | Python, JavaScript, C++, otros    | Navegador web             |
+| **Jupyter Notebook**| Python, Julia, R                  | Navegador web / local     |
+
+---
+
+## ✅ Ventajas de los Entornos de Desarrollo
+
+- 🧠 **Facilitan el aprendizaje y la productividad**.
+- 🧪 **Depuración eficiente** gracias a herramientas integradas.
+- ⚙️ **Integración con control de versiones** como Git.
+- 💡 **Autocompletado y sugerencias de código** (intellisense).
+- 🔍 **Análisis estático del código** para evitar errores antes de compilar.
+- 🌐 **Soporte para extensiones y plugins**.
+
+---
+
+## ❌ Desventajas de los Entornos de Desarrollo
+
+- 💾 **Requieren recursos** (RAM, CPU) elevados en algunos casos.
+- 🐢 **Pueden ser lentos** en equipos antiguos.
+- 💰 Algunas versiones profesionales son **de pago**.
+- 📦 La gran cantidad de herramientas puede ser **abrumadora para principiantes**.
+- ⚙️ Algunos entornos son **difíciles de configurar correctamente**.
+
+---
+
+## 🚀 Recomendación según el nivel
+
+| Nivel         | Recomendado                                   |
+|---------------|------------------------------------------------|
+| Principiante  | Visual Studio Code, Replit, Code::Blocks       |
+| Intermedio    | NetBeans, Eclipse, PyCharm                     |
+| Avanzado      | Visual Studio, Android Studio, Xcode           |
+
+---
+# ⚙️ Compiladores de Código
+
+## 🔍 ¿Qué es un Compilador?
+
+Un **compilador** es un programa que traduce el código fuente escrito en un lenguaje de programación (como C, C++, Java) a un lenguaje de bajo nivel (como lenguaje máquina o ensamblador) para que pueda ser ejecutado por una computadora.
+
+---
+
+## 🧠 ¿Cómo funciona un Compilador?
+
+El proceso de compilación suele seguir estas fases:
+
+1. **Análisis léxico**: Divide el código en tokens.
+2. **Análisis sintáctico**: Verifica la estructura del código según las reglas del lenguaje.
+3. **Análisis semántico**: Comprueba que las operaciones sean válidas (por ejemplo, tipos compatibles).
+4. **Optimización**: Mejora el código para que sea más eficiente.
+5. **Generación de código**: Traduce el código fuente a lenguaje máquina.
+6. **Enlazado (linking)**: Une diferentes módulos o bibliotecas en un solo archivo ejecutable.
+
+---
+
+## 🛠️ Tipos de Compiladores
+
+| Tipo                       | Descripción                                                           |
+|----------------------------|------------------------------------------------------------------------|
+| **Compilador nativo**      | Traduce directamente a código máquina (ej. GCC para C/C++).           |
+| **Compilador cruzado**     | Compila para otra arquitectura (ej. ARM desde una PC).                |
+| **Compilador Just-In-Time (JIT)** | Compila durante la ejecución (ej. Java, .NET).                      |
+| **Compilador en la nube**  | Servicios online que compilan código desde el navegador.              |
+
+---
+
+## 🌟 Ejemplos de Compiladores Populares
+
+| Lenguaje   | Compiladores Populares                        |
+|------------|------------------------------------------------|
+| C/C++      | GCC, Clang, MSVC                              |
+| Java       | javac (JDK), Eclipse Compiler                 |
+| Python     | CPython (intérprete + compilador), Nuitka     |
+| C#         | Roslyn, Mono                                  |
+| Go         | Go Compiler (gc)                              |
+| Rust       | rustc                                         |
+| Kotlin     | kotlinc                                       |
+| TypeScript | tsc (TypeScript Compiler)                     |
+
+---
+
+## ✅ Ventajas de los Compiladores
+
+- 🚀 **Alto rendimiento**: El código compilado suele ejecutarse más rápido.
+- 🧱 **Detección de errores previa**: Muchos errores se detectan antes de ejecutar el programa.
+- 🔒 **Distribución segura**: El código binario es más difícil de modificar o leer.
+- 📦 **Optimización del código**: Mejora el uso de memoria y CPU.
+
+---
+
+## ❌ Desventajas de los Compiladores
+
+- 🐢 **Tiempo de compilación**: Puede ser lento para programas grandes.
+- 🔄 **Menor flexibilidad**: Requiere recompilar para aplicar cambios.
+- 💾 **Mayor uso de espacio**: Los binarios generados ocupan espacio.
+- ⚙️ **Dependencia del sistema**: Puede generar código solo para un tipo de sistema operativo o arquitectura.
+
+---
+
+## 🤔 Compilador vs Intérprete
+
+| Aspecto             | Compilador                             | Intérprete                            |
+|---------------------|-----------------------------------------|----------------------------------------|
+| Traducción          | Código fuente → código máquina          | Ejecuta línea por línea                |
+| Velocidad de ejecución | Rápido                                | Más lento                              |
+| Revisión de errores | En tiempo de compilación                | En tiempo de ejecución                 |
+| Ejemplos            | C, C++, Go, Rust                        | Python, JavaScript, Ruby               |
+
+---
+
+## 💡 Compiladores Online (Web-Based)
+
+- [**Replit**](https://replit.com)
+- [**OnlineGDB**](https://www.onlinegdb.com)
+- [**Compiler Explorer (Godbolt)**](https://godbolt.org)
+- [**Programiz**](https://www.programiz.com)
+- [**JDoodle**](https://www.jdoodle.com)
+
+---
+
+
 
 ## I Operadores
 

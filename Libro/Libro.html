@@ -117,9 +117,26 @@ Facultad de Ingeniería Estadística e Informática
 <section id="índice" class="level2">
 <h2 class="anchored" data-anchor-id="índice">Índice</h2>
 <ul>
-<li><a href="#índice">Índice</a></li>
-<li><a href="#introducción">Introducción</a></li>
-<li><a href="#ejemplos-básicos-en-c">Ejemplos Básicos en C++</a></li>
+<li><a href="#-entornos-de-desarrollo">🧰 Entornos de Desarrollo</a>
+<ul>
+<li><a href="#-qué-es-un-entorno-de-desarrollo">🔍 ¿Qué es un Entorno de Desarrollo?</a></li>
+<li><a href="#-componentes-típicos-de-un-entorno-de-desarrollo">🧩 Componentes típicos de un Entorno de Desarrollo</a></li>
+<li><a href="#-tipos-de-entornos-de-desarrollo">🧪 Tipos de Entornos de Desarrollo</a></li>
+<li><a href="#-ejemplos-populares-de-entornos-de-desarrollo">🌟 Ejemplos Populares de Entornos de Desarrollo</a></li>
+<li><a href="#-ventajas-de-los-entornos-de-desarrollo">✅ Ventajas de los Entornos de Desarrollo</a></li>
+<li><a href="#-desventajas-de-los-entornos-de-desarrollo">❌ Desventajas de los Entornos de Desarrollo</a></li>
+<li><a href="#-recomendación-según-el-nivel">🚀 Recomendación según el nivel</a></li>
+</ul></li>
+<li><a href="#️-compiladores-de-código">⚙️ Compiladores de Código</a>
+<ul>
+<li><a href="#-qué-es-un-compilador">🔍 ¿Qué es un Compilador?</a></li>
+<li><a href="#-cómo-funciona-un-compilador">🧠 ¿Cómo funciona un Compilador?</a></li>
+<li><a href="#️-tipos-de-compiladores">🛠️ Tipos de Compiladores</a></li>
+<li><a href="#-ejemplos-de-compiladores-populares">🌟 Ejemplos de Compiladores Populares</a></li>
+<li><a href="#-ventajas-de-los-compiladores">✅ Ventajas de los Compiladores</a></li>
+<li><a href="#-desventajas-de-los-compiladores">❌ Desventajas de los Compiladores</a></li>
+<li><a href="#-compilador-vs-intérprete">🤔 Compilador vs Intérprete</a></li>
+<li><a href="#-compiladores-online-web-based">💡 Compiladores Online (Web-Based)</a></li>
 <li><a href="#i-operadores">I Operadores</a></li>
 <li><a href="#ii-estructuras-de-control">II Estructuras De Control</a></li>
 <li><a href="#iii-funciones">III Funciones</a></li>
@@ -133,15 +150,17 @@ Facultad de Ingeniería Estadística e Informática
 <li><a href="#xi-pilas-stacks">XI Pilas (Stacks)</a></li>
 <li><a href="#xii-recursión">XII Recursión</a></li>
 <li><a href="#conclusión">Conclusión</a></li>
+</ul></li>
 </ul>
 <hr>
 </section>
 <section id="introducción" class="level2">
 <h2 class="anchored" data-anchor-id="introducción">Introducción</h2>
+<div style="overflow: auto;">
+<p><img src="img/est.png" alt="Estructuras de datos" width="250" align="right" style="float: right; margin-left: 15px; margin-bottom: 10px;"></p>
 <p>Las <strong>estructuras de datos</strong> son la columna vertebral de la programación eficiente. Permiten <strong>almacenar, organizar y manipular datos</strong> de forma sistemática dentro de un programa. Su correcta aplicación facilita la resolución de problemas complejos, mejora el rendimiento del software y permite crear algoritmos más optimizados.</p>
-<p align="center">
-<span class="img-container"> <img src="img/est.png" alt="" width="300"> </span>
-</p>
+<p>Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas). Estas estructuras no solo gestionan información, sino que permiten crear soluciones más limpias, escalables y adaptables a contextos reales.</p>
+</div>
 <p>Cada estructura de datos responde a un tipo de necesidad diferente: desde almacenar listas simples de elementos (como arrays), hasta manejar jerarquías (como árboles) o secuencias dinámicas (como listas enlazadas).</p>
 <p>El dominio de las estructuras de datos es fundamental para cualquier programador, ya que <strong>define cómo se accede, se modifica y se procesa la información</strong> dentro de un programa. Son indispensables tanto en pequeños programas como en sistemas a gran escala, desde videojuegos hasta redes neuronales artificiales.</p>
 <blockquote class="blockquote">
@@ -198,6 +217,362 @@ Facultad de Ingeniería Estadística e Informática
 <blockquote class="blockquote">
 <p><em>Una estructura agrupa distintos tipos de datos bajo una misma entidad.</em></p>
 </blockquote>
+<hr>
+</section>
+<section id="entornos-de-desarrollo" class="level1">
+<h1>🧰 Entornos de Desarrollo</h1>
+<section id="qué-es-un-entorno-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="qué-es-un-entorno-de-desarrollo">🔍 ¿Qué es un Entorno de Desarrollo?</h2>
+<p>Un <strong>Entorno de Desarrollo</strong> es un conjunto de herramientas y servicios que permiten a los programadores escribir, depurar, probar y mantener código de manera más eficiente. Su propósito es facilitar el proceso de creación de software, proporcionando interfaces amigables, depuradores, compiladores y otros recursos útiles.</p>
+<p>También se le conoce como <strong>IDE</strong> (<em>Integrated Development Environment</em> o Entorno de Desarrollo Integrado) cuando incluye varias herramientas en una sola aplicación.</p>
+<hr>
+</section>
+<section id="componentes-típicos-de-un-entorno-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="componentes-típicos-de-un-entorno-de-desarrollo">🧩 Componentes típicos de un Entorno de Desarrollo</h2>
+<ul>
+<li><strong>Editor de código fuente</strong> – Donde se escribe el código.</li>
+<li><strong>Compilador o intérprete</strong> – Para traducir el código a lenguaje de máquina.</li>
+<li><strong>Depurador (Debugger)</strong> – Para detectar errores y ejecutar paso a paso.</li>
+<li><strong>Control de versiones</strong> – Para manejar cambios en el código (como Git).</li>
+<li><strong>Simuladores/Emuladores</strong> – Para probar el software en entornos virtuales.</li>
+<li><strong>Terminal/Consola</strong> – Para ejecutar comandos del sistema o scripts.</li>
+</ul>
+<hr>
+</section>
+<section id="tipos-de-entornos-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="tipos-de-entornos-de-desarrollo">🧪 Tipos de Entornos de Desarrollo</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 31%">
+<col style="width: 69%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo de Entorno</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>IDE (Entorno Integrado)</strong></td>
+<td>Herramienta todo-en-uno: editor, compilador, depurador, etc.</td>
+</tr>
+<tr class="even">
+<td><strong>Entorno Local</strong></td>
+<td>Instalado directamente en el computador del desarrollador.</td>
+</tr>
+<tr class="odd">
+<td><strong>Entorno Web (Online IDE)</strong></td>
+<td>Basado en la nube, accesible desde navegadores.</td>
+</tr>
+<tr class="even">
+<td><strong>Entorno Remoto</strong></td>
+<td>Corre en servidores o máquinas virtuales remotas.</td>
+</tr>
+<tr class="odd">
+<td><strong>Entorno Móvil</strong></td>
+<td>Para aplicaciones móviles (Android Studio, Xcode).</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="ejemplos-populares-de-entornos-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplos-populares-de-entornos-de-desarrollo">🌟 Ejemplos Populares de Entornos de Desarrollo</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 25%">
+<col style="width: 42%">
+<col style="width: 32%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Entorno/IDE</th>
+<th>Lenguajes Soportados</th>
+<th>Sistema Operativo</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Visual Studio</strong></td>
+<td>C++, C#, Python, JavaScript</td>
+<td>Windows, macOS</td>
+</tr>
+<tr class="even">
+<td><strong>Eclipse</strong></td>
+<td>Java, C++, PHP</td>
+<td>Multiplataforma</td>
+</tr>
+<tr class="odd">
+<td><strong>PyCharm</strong></td>
+<td>Python</td>
+<td>Multiplataforma</td>
+</tr>
+<tr class="even">
+<td><strong>NetBeans</strong></td>
+<td>Java, PHP, C/C++</td>
+<td>Multiplataforma</td>
+</tr>
+<tr class="odd">
+<td><strong>Android Studio</strong></td>
+<td>Kotlin, Java</td>
+<td>Windows, macOS, Linux</td>
+</tr>
+<tr class="even">
+<td><strong>Xcode</strong></td>
+<td>Swift, Objective-C</td>
+<td>Solo macOS</td>
+</tr>
+<tr class="odd">
+<td><strong>Code::Blocks</strong></td>
+<td>C, C++</td>
+<td>Windows, Linux, macOS</td>
+</tr>
+<tr class="even">
+<td><strong>VS Code</strong></td>
+<td>Soporta muchos con extensiones</td>
+<td>Multiplataforma</td>
+</tr>
+<tr class="odd">
+<td><strong>Replit</strong></td>
+<td>Python, JavaScript, C++, otros</td>
+<td>Navegador web</td>
+</tr>
+<tr class="even">
+<td><strong>Jupyter Notebook</strong></td>
+<td>Python, Julia, R</td>
+<td>Navegador web / local</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="ventajas-de-los-entornos-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="ventajas-de-los-entornos-de-desarrollo">✅ Ventajas de los Entornos de Desarrollo</h2>
+<ul>
+<li>🧠 <strong>Facilitan el aprendizaje y la productividad</strong>.</li>
+<li>🧪 <strong>Depuración eficiente</strong> gracias a herramientas integradas.</li>
+<li>⚙️ <strong>Integración con control de versiones</strong> como Git.</li>
+<li>💡 <strong>Autocompletado y sugerencias de código</strong> (intellisense).</li>
+<li>🔍 <strong>Análisis estático del código</strong> para evitar errores antes de compilar.</li>
+<li>🌐 <strong>Soporte para extensiones y plugins</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="desventajas-de-los-entornos-de-desarrollo" class="level2">
+<h2 class="anchored" data-anchor-id="desventajas-de-los-entornos-de-desarrollo">❌ Desventajas de los Entornos de Desarrollo</h2>
+<ul>
+<li>💾 <strong>Requieren recursos</strong> (RAM, CPU) elevados en algunos casos.</li>
+<li>🐢 <strong>Pueden ser lentos</strong> en equipos antiguos.</li>
+<li>💰 Algunas versiones profesionales son <strong>de pago</strong>.</li>
+<li>📦 La gran cantidad de herramientas puede ser <strong>abrumadora para principiantes</strong>.</li>
+<li>⚙️ Algunos entornos son <strong>difíciles de configurar correctamente</strong>.</li>
+</ul>
+<hr>
+</section>
+<section id="recomendación-según-el-nivel" class="level2">
+<h2 class="anchored" data-anchor-id="recomendación-según-el-nivel">🚀 Recomendación según el nivel</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Nivel</th>
+<th>Recomendado</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Principiante</td>
+<td>Visual Studio Code, Replit, Code::Blocks</td>
+</tr>
+<tr class="even">
+<td>Intermedio</td>
+<td>NetBeans, Eclipse, PyCharm</td>
+</tr>
+<tr class="odd">
+<td>Avanzado</td>
+<td>Visual Studio, Android Studio, Xcode</td>
+</tr>
+</tbody>
+</table>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 5%">
+</colgroup>
+<tbody>
+<tr class="odd">
+<td># ⚙️ Compiladores de Código</td>
+</tr>
+<tr class="even">
+<td>## 🔍 ¿Qué es un Compilador?</td>
+</tr>
+<tr class="odd">
+<td>Un <strong>compilador</strong> es un programa que traduce el código fuente escrito en un lenguaje de programación (como C, C++, Java) a un lenguaje de bajo nivel (como lenguaje máquina o ensamblador) para que pueda ser ejecutado por una computadora.</td>
+</tr>
+</tbody>
+</table>
+</section>
+<section id="cómo-funciona-un-compilador" class="level2">
+<h2 class="anchored" data-anchor-id="cómo-funciona-un-compilador">🧠 ¿Cómo funciona un Compilador?</h2>
+<p>El proceso de compilación suele seguir estas fases:</p>
+<ol type="1">
+<li><strong>Análisis léxico</strong>: Divide el código en tokens.</li>
+<li><strong>Análisis sintáctico</strong>: Verifica la estructura del código según las reglas del lenguaje.</li>
+<li><strong>Análisis semántico</strong>: Comprueba que las operaciones sean válidas (por ejemplo, tipos compatibles).</li>
+<li><strong>Optimización</strong>: Mejora el código para que sea más eficiente.</li>
+<li><strong>Generación de código</strong>: Traduce el código fuente a lenguaje máquina.</li>
+<li><strong>Enlazado (linking)</strong>: Une diferentes módulos o bibliotecas en un solo archivo ejecutable.</li>
+</ol>
+<hr>
+</section>
+<section id="tipos-de-compiladores" class="level2">
+<h2 class="anchored" data-anchor-id="tipos-de-compiladores">🛠️ Tipos de Compiladores</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 28%">
+<col style="width: 72%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Tipo</th>
+<th>Descripción</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td><strong>Compilador nativo</strong></td>
+<td>Traduce directamente a código máquina (ej. GCC para C/C++).</td>
+</tr>
+<tr class="even">
+<td><strong>Compilador cruzado</strong></td>
+<td>Compila para otra arquitectura (ej. ARM desde una PC).</td>
+</tr>
+<tr class="odd">
+<td><strong>Compilador Just-In-Time (JIT)</strong></td>
+<td>Compila durante la ejecución (ej. Java, .NET).</td>
+</tr>
+<tr class="even">
+<td><strong>Compilador en la nube</strong></td>
+<td>Servicios online que compilan código desde el navegador.</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="ejemplos-de-compiladores-populares" class="level2">
+<h2 class="anchored" data-anchor-id="ejemplos-de-compiladores-populares">🌟 Ejemplos de Compiladores Populares</h2>
+<table class="caption-top table">
+<thead>
+<tr class="header">
+<th>Lenguaje</th>
+<th>Compiladores Populares</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>C/C++</td>
+<td>GCC, Clang, MSVC</td>
+</tr>
+<tr class="even">
+<td>Java</td>
+<td>javac (JDK), Eclipse Compiler</td>
+</tr>
+<tr class="odd">
+<td>Python</td>
+<td>CPython (intérprete + compilador), Nuitka</td>
+</tr>
+<tr class="even">
+<td>C#</td>
+<td>Roslyn, Mono</td>
+</tr>
+<tr class="odd">
+<td>Go</td>
+<td>Go Compiler (gc)</td>
+</tr>
+<tr class="even">
+<td>Rust</td>
+<td>rustc</td>
+</tr>
+<tr class="odd">
+<td>Kotlin</td>
+<td>kotlinc</td>
+</tr>
+<tr class="even">
+<td>TypeScript</td>
+<td>tsc (TypeScript Compiler)</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="ventajas-de-los-compiladores" class="level2">
+<h2 class="anchored" data-anchor-id="ventajas-de-los-compiladores">✅ Ventajas de los Compiladores</h2>
+<ul>
+<li>🚀 <strong>Alto rendimiento</strong>: El código compilado suele ejecutarse más rápido.</li>
+<li>🧱 <strong>Detección de errores previa</strong>: Muchos errores se detectan antes de ejecutar el programa.</li>
+<li>🔒 <strong>Distribución segura</strong>: El código binario es más difícil de modificar o leer.</li>
+<li>📦 <strong>Optimización del código</strong>: Mejora el uso de memoria y CPU.</li>
+</ul>
+<hr>
+</section>
+<section id="desventajas-de-los-compiladores" class="level2">
+<h2 class="anchored" data-anchor-id="desventajas-de-los-compiladores">❌ Desventajas de los Compiladores</h2>
+<ul>
+<li>🐢 <strong>Tiempo de compilación</strong>: Puede ser lento para programas grandes.</li>
+<li>🔄 <strong>Menor flexibilidad</strong>: Requiere recompilar para aplicar cambios.</li>
+<li>💾 <strong>Mayor uso de espacio</strong>: Los binarios generados ocupan espacio.</li>
+<li>⚙️ <strong>Dependencia del sistema</strong>: Puede generar código solo para un tipo de sistema operativo o arquitectura.</li>
+</ul>
+<hr>
+</section>
+<section id="compilador-vs-intérprete" class="level2">
+<h2 class="anchored" data-anchor-id="compilador-vs-intérprete">🤔 Compilador vs Intérprete</h2>
+<table class="caption-top table">
+<colgroup>
+<col style="width: 20%">
+<col style="width: 40%">
+<col style="width: 39%">
+</colgroup>
+<thead>
+<tr class="header">
+<th>Aspecto</th>
+<th>Compilador</th>
+<th>Intérprete</th>
+</tr>
+</thead>
+<tbody>
+<tr class="odd">
+<td>Traducción</td>
+<td>Código fuente → código máquina</td>
+<td>Ejecuta línea por línea</td>
+</tr>
+<tr class="even">
+<td>Velocidad de ejecución</td>
+<td>Rápido</td>
+<td>Más lento</td>
+</tr>
+<tr class="odd">
+<td>Revisión de errores</td>
+<td>En tiempo de compilación</td>
+<td>En tiempo de ejecución</td>
+</tr>
+<tr class="even">
+<td>Ejemplos</td>
+<td>C, C++, Go, Rust</td>
+<td>Python, JavaScript, Ruby</td>
+</tr>
+</tbody>
+</table>
+<hr>
+</section>
+<section id="compiladores-online-web-based" class="level2">
+<h2 class="anchored" data-anchor-id="compiladores-online-web-based">💡 Compiladores Online (Web-Based)</h2>
+<ul>
+<li><a href="https://replit.com"><strong>Replit</strong></a></li>
+<li><a href="https://www.onlinegdb.com"><strong>OnlineGDB</strong></a></li>
+<li><a href="https://godbolt.org"><strong>Compiler Explorer (Godbolt)</strong></a></li>
+<li><a href="https://www.programiz.com"><strong>Programiz</strong></a></li>
+<li><a href="https://www.jdoodle.com"><strong>JDoodle</strong></a></li>
+</ul>
 <hr>
 </section>
 <section id="i-operadores" class="level2">
@@ -1399,6 +1774,7 @@ Facultad de Ingeniería Estadística e Informática
 </blockquote>
 <p>Dominar estos conceptos es dominar el lenguaje de la lógica, la eficiencia y la creatividad computacional. Y este es solo el comienzo.</p>
 <hr>
+</section>
 </section>
 </main></div>
 
