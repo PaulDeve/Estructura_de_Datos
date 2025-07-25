@@ -3,7 +3,7 @@
   <table width="100%">
     <tr>
       <td width="20%" align="left">
-        <img src="UNAP.png" alt="Logo Izquierdo" width="100">
+        <img src="img/UNAP.png" alt="Logo Izquierdo" width="100">
       </td>
       <td width="60%" align="center">
         <h1 style="color:#0077b6;">UNIVERSIDAD NACIONAL DEL ALTIPLANO</h1>
@@ -11,7 +11,7 @@
         <p>
       </td>
       <td width="20%" align="right">
-        <img src="FINESI.png" alt="Logo Derecho" width="100">
+        <img src="img/FINESI.png" alt="Logo Derecho" width="100">
       </td>
     </tr>
   </table>
