@@ -10,12 +10,13 @@
 <div align="center">
   <table width="100%">
     <tr>
-      <td width="20%" align="left">
+       <td width="20%" align="left">
         <img src="img/UNAP.png" alt="Logo Izquierdo" width="100">
       </td>
       <td width="60%" align="center">
         <h1 style="color:#0077b6;">UNIVERSIDAD NACIONAL DEL ALTIPLANO</h1>
         <h3 style="color:#023e8a;">Facultad de Ingeniería Estadística e Informática</h3>
+        <h4 style="color:#03045e;">Escuela Profesional de Ingeniería Estadística e Informática </h4>
         <p>
       </td>
       <td width="20%" align="right">
@@ -36,10 +37,10 @@
 - [III Funciones](#iii-funciones)
 - [IV Arrays](#iv-arrays)
 - [V Punteros y Referencias](#v-punteros-y-referencias)
-- [VI Operadores tipo \& y \*](#vi-operadores-tipo--y-)
+- [VI Operadores de Tipo \& y \*](#vi-operadores-de-tipo--y-)
 - [VII Entrada y Salida de Datos](#vii-entrada-y-salida-de-datos)
 - [VIII Tipos de Datos, Variables y Constantes](#viii-tipos-de-datos-variables-y-constantes)
-- [IX Comentarios y estructura de un programa](#ix-comentarios-y-estructura-de-un-programa)
+- [IX Comentarios y Estructura de un Programa](#ix-comentarios-y-estructura-de-un-programa)
 - [X Listas Enlazadas](#x-listas-enlazadas)
 - [XI Listas Doblemente Enlazadas](#xi-listas-doblemente-enlazadas)
 - [XII Listas Circulares](#xii-listas-circulares)
@@ -58,7 +59,7 @@
   
 
 
-
+<div style="page-break-before: always"></div>
 
 ## Introducción
 
@@ -628,7 +629,7 @@ Trabajar con punteros es como manipular los circuitos internos de la máquina: p
 
 ---
 
-## VI Operadores tipo \& y \*
+## VI Operadores de Tipo \& y \*
 
 El operador `&` se usa para obtener la dirección de memoria de una variable, es decir, su ubicación exacta en la RAM. El operador `*` permite acceder al valor que se encuentra en esa dirección (desreferenciación). Ambos son indispensables para trabajar con punteros en lenguajes como C y C++.
 
@@ -942,7 +943,7 @@ Comprender su uso correcto permite organizar la información, evitar errores y c
 
 ---
 
-## IX Comentarios y estructura de un programa
+## IX Comentarios y Estructura de un Programa
 Un programa bien estructurado es como un edificio bien diseñado: claro, organizado y fácil de mantener. En C++, un programa sigue una estructura básica que permite al compilador entender qué hacer y cómo hacerlo.
 
 Además, los **comentarios** son líneas que el compilador ignora pero que resultan fundamentales para explicar el funcionamiento del código a otros programadores (¡y a ti mismo en el futuro!).
@@ -1040,7 +1041,7 @@ Una buena estructura y el uso adecuado de comentarios hacen que el código sea m
 - Buena práctica profesional: Todo programador debe documentar su código.
 
 
-**reflexión Final**
+**Reflexión Final**
 
 >*Un buen código se escribe dos veces: primero para que funcione, y después para que otro lo entienda. Los comentarios son la voz del programador en su obra.*
 
@@ -1773,7 +1774,6 @@ Son indispensables en programación moderna con C++.
 - Fácil de recorrer y manipular: Gracias a métodos integrados.
 
 - Parte de STL: Optimizado para rendimiento y seguridad.
-- 
 **Reflexión Final**
 >*Usar vectores STL es como tener una herramienta inteligente que se adapta a tus necesidades sin complicarte la vida. Son el mejor aliado para trabajar con listas de datos variables.*
 
@@ -2383,6 +2383,7 @@ BST inorden: 20 30 40 50 60 70
 - Usado en bases de datos, índices, autocompletado, etc.
 
 - El recorrido inorden siempre devuelve los elementos ordenados.
+  
 **Practica 1**
 >*Buscar un valor dentro de un BST.*
 ```cpp
@@ -2623,6 +2624,7 @@ Recorrido inorden del AVL: 10 20 30
 - Utiliza rotaciones para mantener el equilibrio.
 
 - Útil cuando se requieren muchas búsquedas con tiempos consistentes.
+  
 **Practica 1**
 >*Insertar los números 10, 20, 30, 40 en un AVL y verificar el balance.*
 ```cpp
@@ -2696,6 +2698,7 @@ int main() {
 2. Se incluye <cmath> para acceder a sqrt(), función que calcula raíces cuadradas.
 
 3. Se calcula la raíz cuadrada de 25 y se muestra el resultado.
+   
 ***Resultados esperados en pantalla:***
 ```cpp
 Raíz cuadrada de 25 es: 5
