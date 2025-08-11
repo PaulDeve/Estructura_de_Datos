@@ -1,0 +1,998 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>PaulDev - Desarrollador Web</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+</head>
+<body data-theme="dark">
+    <!-- Header fijo -->
+    <header class="header">
+        <div class="container">
+            <div class="logo">
+                <h2>PaulDev</h2>
+            </div>
+            <nav class="nav">
+                <ul class="nav-list">
+                    <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                    <li><a href="#servicios" class="nav-link">Servicios</a></li>
+                    <li><a href="#portafolio" class="nav-link">Portafolio</a></li>
+                    <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                    <li><a href="#contacto" class="nav-link">Contacto</a></li>
+                </ul>
+            </nav>
+            <div class="theme-toggle">
+                <button id="themeToggle" class="theme-btn" title="Cambiar tema">
+                    <i class="fas fa-moon"></i>
+                </button>
+            </div>
+            <div class="menu-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </div>
+    </header>
+
+    <!-- Sección Hero -->
+    <section id="inicio" class="hero">
+        <div class="hero-background">
+            <div class="particles"></div>
+            <div class="floating-shapes">
+                <div class="shape shape-1"></div>
+                <div class="shape shape-2"></div>
+                <div class="shape shape-3"></div>
+                <div class="shape shape-4"></div>
+            </div>
+        </div>
+        <div class="container">
+            <div class="hero-content">
+                <div class="hero-badge">
+                    <span>🚀 Disponible para nuevos proyectos</span>
+                </div>
+                <h1 class="hero-title">
+                    Diseño y desarrollo de páginas web 
+                    <span class="highlight">modernas y efectivas</span>
+                </h1>
+                <p class="hero-subtitle">
+                    Transformo ideas en experiencias digitales únicas que conectan con tu audiencia
+                </p>
+                <div class="hero-stats">
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="50">0</span>
+                        <span class="stat-label">Proyectos Completados</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="30">0</span>
+                        <span class="stat-label">Clientes Satisfechos</span>
+                    </div>
+                    <div class="stat-item">
+                        <span class="stat-number" data-target="5">0</span>
+                        <span class="stat-label">Años de Experiencia</span>
+                    </div>
+                </div>
+                <div class="hero-buttons">
+                    <button class="btn btn-primary" onclick="scrollToSection('contacto')">
+                        <i class="fas fa-rocket"></i>
+                        Solicitar Cotización
+                    </button>
+                    <button class="btn btn-secondary" onclick="scrollToSection('portafolio')">
+                        <i class="fas fa-eye"></i>
+                        Ver Portafolio
+                    </button>
+                </div>
+            </div>
+            <div class="hero-image">
+                <div class="floating-card">
+                    <i class="fas fa-code"></i>
+                </div>
+                <div class="tech-stack">
+                    <div class="tech-item" data-tech="HTML5">
+                        <i class="fab fa-html5"></i>
+                    </div>
+                    <div class="tech-item" data-tech="CSS3">
+                        <i class="fab fa-css3-alt"></i>
+                    </div>
+                    <div class="tech-item" data-tech="JavaScript">
+                        <i class="fab fa-js-square"></i>
+                    </div>
+                    <div class="tech-item" data-tech="React">
+                        <i class="fab fa-react"></i>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="scroll-indicator">
+            <div class="scroll-arrow"></div>
+            <span>Scroll para explorar</span>
+        </div>
+    </section>
+
+    <!-- Sección Servicios -->
+    <section id="servicios" class="services">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Mis Servicios</h2>
+                <p class="section-subtitle">Soluciones digitales completas para hacer crecer tu negocio</p>
+            </div>
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Tiendas Online</h3>
+                    <p>E-commerce completos con pasarelas de pago seguras y gestión de inventario</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Carrito de compras</li>
+                        <li><i class="fas fa-check"></i> Pasarelas de pago</li>
+                        <li><i class="fas fa-check"></i> Panel administrativo</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Desde $500</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-building"></i>
+                    </div>
+                    <h3>Páginas Corporativas</h3>
+                    <p>Sitios web profesionales que reflejan la identidad de tu empresa</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Diseño personalizado</li>
+                        <li><i class="fas fa-check"></i> SEO optimizado</li>
+                        <li><i class="fas fa-check"></i> Integración redes sociales</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Desde $300</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-blog"></i>
+                    </div>
+                    <h3>Blogs</h3>
+                    <p>Plataformas de contenido dinámicas y optimizadas para SEO</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> CMS personalizado</li>
+                        <li><i class="fas fa-check"></i> Sistema de comentarios</li>
+                        <li><i class="fas fa-check"></i> Categorías y tags</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Desde $400</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-rocket"></i>
+                    </div>
+                    <h3>Landing Pages</h3>
+                    <p>Páginas de conversión optimizadas para maximizar resultados</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> A/B testing</li>
+                        <li><i class="fas fa-check"></i> Analytics integrado</li>
+                        <li><i class="fas fa-check"></i> Formularios optimizados</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Desde $200</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="500">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Diseño Responsivo</h3>
+                    <p>Adaptación perfecta a todos los dispositivos y pantallas</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Mobile-first</li>
+                        <li><i class="fas fa-check"></i> Touch-friendly</li>
+                        <li><i class="fas fa-check"></i> Cross-browser</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Desde $150</span>
+                    </div>
+                </div>
+                <div class="service-card" data-aos="fade-up" data-aos-delay="600">
+                    <div class="service-icon">
+                        <i class="fas fa-search"></i>
+                    </div>
+                    <h3>SEO y Optimización</h3>
+                    <p>Mejora del posicionamiento en buscadores y velocidad de carga</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Optimización on-page</li>
+                        <li><i class="fas fa-check"></i> Velocidad de carga</li>
+                        <li><i class="fas fa-check"></i> Meta tags optimizados</li>
+                    </ul>
+                    <div class="service-price">
+                        <span>Desde $100</span>
+                    </div>
+                </div>
+            </div>
+            <div class="services-cta">
+                <h3>¿Necesitas algo más específico?</h3>
+                <p>Cuéntame sobre tu proyecto y te daré una solución personalizada</p>
+                <button class="btn btn-primary" onclick="scrollToSection('contacto')">
+                    <i class="fas fa-comments"></i>
+                    Consulta Gratuita
+                </button>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Portafolio -->
+    <section id="portafolio" class="portfolio">
+        <div class="container">
+            <h2 class="section-title">Mi Portafolio</h2>
+            <div class="portfolio-grid">
+                <div class="portfolio-item" onclick="openModal(0)">
+                    <img src="img/p1.png" alt="Proyecto 1">
+                    <div class="portfolio-overlay">
+                        <h3>Tienda Online - Moda</h3>
+                        <p>E-commerce completo con carrito de compras</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal(1)">
+                    <img src="https://via.placeholder.com/400x300/7c3aed/ffffff?text=Proyecto+2" alt="Proyecto 2">
+                    <div class="portfolio-overlay">
+                        <h3>Página Corporativa</h3>
+                        <p>Sitio web empresarial moderno</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal(2)">
+                    <img src="https://via.placeholder.com/400x300/dc2626/ffffff?text=Proyecto+3" alt="Proyecto 3">
+                    <div class="portfolio-overlay">
+                        <h3>Blog Personal</h3>
+                        <p>Plataforma de contenido con CMS</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal(3)">
+                    <img src="https://via.placeholder.com/400x300/059669/ffffff?text=Proyecto+4" alt="Proyecto 4">
+                    <div class="portfolio-overlay">
+                        <h3>Landing Page</h3>
+                        <p>Página de conversión optimizada</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal(4)">
+                    <img src="https://via.placeholder.com/400x300/ea580c/ffffff?text=Proyecto+5" alt="Proyecto 5">
+                    <div class="portfolio-overlay">
+                        <h3>Aplicación Web</h3>
+                        <p>Dashboard interactivo</p>
+                    </div>
+                </div>
+                <div class="portfolio-item" onclick="openModal(5)">
+                    <img src="https://via.placeholder.com/400x300/be185d/ffffff?text=Proyecto+6" alt="Proyecto 6">
+                    <div class="portfolio-overlay">
+                        <h3>Portfolio Artístico</h3>
+                        <p>Galería de trabajos creativos</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Modal para portafolio -->
+    <div id="portfolioModal" class="modal">
+        <div class="modal-content">
+            <span class="close" onclick="closeModal()">&times;</span>
+            <img id="modalImage" src="" alt="">
+            <div class="modal-info">
+                <h3 id="modalTitle"></h3>
+                <p id="modalDescription"></p>
+                <div class="modal-tech">
+                    <span class="tech-tag">HTML</span>
+                    <span class="tech-tag">CSS</span>
+                    <span class="tech-tag">JavaScript</span>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+
+
+
+
+    <!-- Sección Stack Tecnológico -->
+    <section id="tecnologias" class="tech-stack-section">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-code"></i>
+                    <span>Stack Tecnológico</span>
+                </div>
+                <h2 class="section-title">Tecnologías que Manejo</h2>
+                <p class="section-subtitle">Herramientas, frameworks y tecnologías que uso para crear soluciones digitales excepcionales</p>
+            </div>
+            
+            <div class="tech-showcase">
+                <div class="tech-grid">
+                    <!-- Frontend Technologies -->
+                    <div class="tech-section">
+                        <div class="tech-section-header">
+                            <div class="tech-section-icon">
+                                <i class="fas fa-palette"></i>
+                            </div>
+                            <h3>Frontend</h3>
+                            <span class="tech-count">8 tecnologías</span>
+                        </div>
+                        <div class="tech-cards">
+                            <div class="tech-card" data-skill="95">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-html5"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Experto</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 95%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>HTML5 Semántico</h4>
+                                <p>Estructura web moderna y accesible</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="90">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-css3-alt"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Experto</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 90%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>CSS3 Avanzado</h4>
+                                <p>Estilos modernos y animaciones fluidas</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="85">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-js-square"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>JavaScript ES6+</h4>
+                                <p>Lógica interactiva y funcional</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="80">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-react"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>React & Hooks</h4>
+                                <p>Interfaces dinámicas y reutilizables</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="75">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-vuejs"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Vue.js 3</h4>
+                                <p>Framework progresivo y versátil</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="85">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-sass"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 85%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Sass/SCSS</h4>
+                                <p>CSS preprocesado y organizado</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="80">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-wind"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Tailwind CSS</h4>
+                                <p>Framework utility-first moderno</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="70">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-js"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>TypeScript</h4>
+                                <p>JavaScript tipado y robusto</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Backend Technologies -->
+                    <div class="tech-section">
+                        <div class="tech-section-header">
+                            <div class="tech-section-icon">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend</h3>
+                            <span class="tech-count">7 tecnologías</span>
+                        </div>
+                        <div class="tech-cards">
+                            <div class="tech-card" data-skill="80">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-node-js"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 80%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Node.js & Express</h4>
+                                <p>Servidor JavaScript escalable</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="75">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-python"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Python & Django</h4>
+                                <p>Backend robusto y rápido</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="70">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fab fa-php"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>PHP & Laravel</h4>
+                                <p>Framework web elegante</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="75">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-route"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Express.js</h4>
+                                <p>Framework minimalista y flexible</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="65">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-feather"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>NestJS</h4>
+                                <p>Framework TypeScript empresarial</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="70">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-project-diagram"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>GraphQL</h4>
+                                <p>API moderna y eficiente</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="70">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-fire"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Firebase</h4>
+                                <p>Backend como servicio</p>
+                            </div>
+                        </div>
+                    </div>
+
+                    <!-- Database Technologies -->
+                    <div class="tech-section">
+                        <div class="tech-section-header">
+                            <div class="tech-section-icon">
+                                <i class="fas fa-database"></i>
+                            </div>
+                            <h3>Bases de Datos</h3>
+                            <span class="tech-count">5 tecnologías</span>
+                        </div>
+                        <div class="tech-cards">
+                            <div class="tech-card" data-skill="75">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Avanzado</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 75%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>MySQL</h4>
+                                <p>Base de datos relacional robusta</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="70">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-leaf"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>MongoDB</h4>
+                                <p>Base de datos NoSQL flexible</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="65">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-elephant"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 65%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>PostgreSQL</h4>
+                                <p>Base de datos avanzada y confiable</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="60">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-memory"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 60%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>Redis Cache</h4>
+                                <p>Almacenamiento en memoria rápido</p>
+                            </div>
+                            
+                            <div class="tech-card" data-skill="70">
+                                <div class="tech-card-header">
+                                    <div class="tech-logo">
+                                        <i class="fas fa-database"></i>
+                                    </div>
+                                    <div class="skill-indicator">
+                                        <span class="skill-level">Intermedio</span>
+                                        <div class="skill-bar">
+                                            <div class="skill-fill" style="width: 70%"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <h4>SQLite</h4>
+                                <p>Base de datos ligera y portable</p>
+                            </div>
+                        </div>
+                    </div>
+
+
+                </div>
+
+                <div class="tech-cta">
+                    <div class="cta-content">
+                        <h3>¿Necesitas una tecnología específica?</h3>
+                        <p>Si tu proyecto requiere tecnologías que no están listadas, ¡no te preocupes! Estoy constantemente aprendiendo y puedo adaptarme a tus necesidades.</p>
+                        <button class="btn btn-primary" onclick="scrollToSection('contacto')">
+                            <i class="fas fa-rocket"></i>
+                            Consultar Disponibilidad
+                        </button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Proceso de Trabajo -->
+    <section id="proceso" class="process">
+        <div class="container">
+            <div class="section-header">
+                <div class="section-badge">
+                    <i class="fas fa-cogs"></i>
+                    <span>Metodología</span>
+                </div>
+                <h2 class="section-title">Mi Proceso de Trabajo</h2>
+                <p class="section-subtitle">Una metodología probada que garantiza resultados excepcionales en cada proyecto</p>
+            </div>
+            
+            <div class="process-timeline">
+                <div class="timeline-line"></div>
+                
+                <div class="process-step" data-aos="fade-right" data-aos-delay="100">
+                    <div class="step-content">
+                        <div class="step-header">
+                            <div class="step-number">01</div>
+                            <div class="step-icon">
+                                <i class="fas fa-comments"></i>
+                            </div>
+                        </div>
+                        <h3>Consulta & Análisis</h3>
+                        <p>Analizamos profundamente tus necesidades, objetivos de negocio y público objetivo para crear la estrategia digital más efectiva</p>
+                        <div class="step-features">
+                            <span class="feature-tag">Briefing</span>
+                            <span class="feature-tag">Análisis Competitivo</span>
+                            <span class="feature-tag">Estrategia UX</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-left" data-aos-delay="200">
+                    <div class="step-content">
+                        <div class="step-header">
+                            <div class="step-number">02</div>
+                            <div class="step-icon">
+                                <i class="fas fa-pencil-ruler"></i>
+                            </div>
+                        </div>
+                        <h3>Diseño & Prototipado</h3>
+                        <p>Creamos wireframes, mockups y prototipos interactivos que reflejen perfectamente tu visión y objetivos de conversión</p>
+                        <div class="step-features">
+                            <span class="feature-tag">Wireframes</span>
+                            <span class="feature-tag">Mockups</span>
+                            <span class="feature-tag">Prototipos</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-right" data-aos-delay="300">
+                    <div class="step-content">
+                        <div class="step-header">
+                            <div class="step-number">03</div>
+                            <div class="step-icon">
+                                <i class="fas fa-code"></i>
+                            </div>
+                        </div>
+                        <h3>Desarrollo & Testing</h3>
+                        <p>Programamos tu sitio web utilizando las mejores prácticas, tecnologías modernas y realizamos pruebas exhaustivas de calidad</p>
+                        <div class="step-features">
+                            <span class="feature-tag">Código Limpio</span>
+                            <span class="feature-tag">Responsive</span>
+                            <span class="feature-tag">Testing</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="process-step" data-aos="fade-left" data-aos-delay="400">
+                    <div class="step-content">
+                        <div class="step-header">
+                            <div class="step-number">04</div>
+                            <div class="step-icon">
+                                <i class="fas fa-rocket"></i>
+                            </div>
+                        </div>
+                        <h3>Lanzamiento & Soporte</h3>
+                        <p>Desplegamos tu proyecto en producción y te proporcionamos soporte continuo para garantizar el éxito a largo plazo</p>
+                        <div class="step-features">
+                            <span class="feature-tag">Deploy</span>
+                            <span class="feature-tag">Soporte 24/7</span>
+                            <span class="feature-tag">Mantenimiento</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="process-cta" data-aos="fade-up" data-aos-delay="500">
+                <div class="cta-content">
+                    <h3>¿Listo para comenzar tu proyecto?</h3>
+                    <p>Agenda una consulta gratuita y descubre cómo puedo transformar tu idea en realidad</p>
+                    <button class="btn btn-primary" onclick="scrollToSection('contacto')">
+                        <i class="fas fa-calendar-check"></i>
+                        Agendar Consulta Gratuita
+                    </button>
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+
+
+
+    <!-- Sección FAQ -->
+    <section id="faq" class="faq">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Preguntas Frecuentes</h2>
+                <p class="section-subtitle">Resuelve tus dudas rápidamente</p>
+            </div>
+            <div class="faq-list">
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="100">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Cuánto tiempo toma desarrollar un sitio web?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>El tiempo varía según la complejidad del proyecto. Una landing page simple puede tomar 1-2 semanas, mientras que un e-commerce completo puede requerir 4-8 semanas. Siempre te proporciono un cronograma detallado al inicio del proyecto.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="200">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Incluyes el hosting y dominio en tus servicios?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, puedo incluir el hosting y dominio en mis servicios. Te recomiendo las mejores opciones según tus necesidades y presupuesto. También puedo migrar sitios existentes si ya tienes hosting.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="300">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Proporcionas mantenimiento después del lanzamiento?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Absolutamente. Ofrezco diferentes planes de mantenimiento que incluyen actualizaciones de seguridad, respaldos, monitoreo de rendimiento y soporte técnico. La duración del soporte varía según el plan elegido.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="400">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Puedes optimizar mi sitio web para SEO?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, todos mis proyectos incluyen optimización SEO básica. Para proyectos más complejos, ofrezco servicios de SEO avanzado que incluyen investigación de palabras clave, optimización de contenido y estrategias de link building.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="500">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Trabajas con clientes internacionales?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Sí, trabajo con clientes de todo el mundo. Utilizo herramientas de comunicación como Zoom, Slack y email para mantener una comunicación fluida. También puedo adaptar el contenido para diferentes mercados y idiomas.</p>
+                    </div>
+                </div>
+
+                <div class="faq-item" data-aos="fade-up" data-aos-delay="600">
+                    <div class="faq-question" onclick="toggleFAQ(this)">
+                        <h3>¿Qué métodos de pago aceptas?</h3>
+                        <i class="fas fa-chevron-down"></i>
+                    </div>
+                    <div class="faq-answer">
+                        <p>Acepto transferencias bancarias, PayPal, Stripe y criptomonedas. Para proyectos grandes, trabajo con un sistema de pagos por etapas: 50% al inicio, 25% a la mitad del proyecto y 25% al finalizar.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Sección Contacto -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <div class="section-header">
+                <h2 class="section-title">Contáctame</h2>
+                <p class="section-subtitle">¿Listo para hacer realidad tu proyecto? ¡Hablemos!</p>
+            </div>
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-intro">
+                        <h3>¿Listo para empezar tu proyecto?</h3>
+                        <p>
+                            Cuéntame sobre tu idea y juntos crearemos algo increíble. 
+                            Estoy aquí para ayudarte a hacer realidad tu visión digital.
+                        </p>
+                    </div>
+                    
+                    <div class="contact-details">
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-envelope"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Email</h4>
+                                <span>edwardsmc19@gmail.com</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-phone"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Teléfono</h4>
+                                <span>+51 965461246</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-map-marker-alt"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Ubicación</h4>
+                                <span>Lima, Perú</span>
+                            </div>
+                        </div>
+                        <div class="contact-item">
+                            <div class="contact-icon">
+                                <i class="fas fa-clock"></i>
+                            </div>
+                            <div class="contact-text">
+                                <h4>Horario</h4>
+                                <span>24/7</span>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="social-links">
+                        <h4>Sígueme en redes sociales</h4>
+                        <div class="social-grid">
+                            <a href="https://github.com/PaulDeve" class="social-link" title="LinkedIn" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                                <span>LinkedIn</span>
+                            </a>
+                            <a href="https://github.com/PaulDeve" class="social-link" title="GitHub" target="_blank">
+                                <i class="fab fa-github"></i>
+                                <span>GitHub</span>
+                            </a>
+                            <a href="https://github.com/PaulDeve" class="social-link" title="Twitter" target="_blank">
+                                <i class="fab fa-twitter"></i>
+                                <span>Twitter</span>
+                            </a>
+                            <a href="https://github.com/PaulDeve" class="social-link" title="Instagram" target="_blank">
+                                <i class="fab fa-instagram"></i>
+                                <span>Instagram</span>
+                            </a>
+                            <a href="https://wa.me/51926566868?text=Hola%2C%20quiero%20más%20información" class="social-link" title="WhatsApp" target="_blank">
+                                <i class="fab fa-whatsapp"></i>
+                                <span>WhatsApp</span>
+                            </a>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-row">
+                            <div class="form-group">
+                                <label for="name">Nombre completo</label>
+                                <input type="text" id="name" name="name" placeholder="Tu nombre" required>
+                            </div>
+                            <div class="form-group">
+                                <label for="email">Email</label>
+                                <input type="email" id="email" name="email" placeholder="tu@email.com" required>
+                            </div>
+                        </div>
+                        <div class="form-group">
+                            <label for="subject">Asunto</label>
+                            <input type="text" id="subject" name="subject" placeholder="¿En qué puedo ayudarte?" required>
+                        </div>
+                        <div class="form-group">
+                            <label for="budget">Presupuesto aproximado</label>
+                            <select id="budget" name="budget">
+                                <option value="">Selecciona un rango</option>
+                                <option value="100-500">$100 - $500</option>
+                                <option value="500-1000">$500 - $1,000</option>
+                                <option value="1000-2000">$1,000 - $2,000</option>
+                                <option value="2000+">Más de $2,000</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <label for="message">Mensaje</label>
+                            <textarea id="message" name="message" placeholder="Cuéntame sobre tu proyecto..." rows="5" required></textarea>
+                        </div>
+                        <div class="form-actions">
+                            <button type="submit" class="btn btn-primary">
+                                <i class="fas fa-paper-plane"></i>
+                                Enviar Mensaje
+                            </button>
+                            <div class="form-note">
+                                <i class="fas fa-shield-alt"></i>
+                                Tu información está segura con nosotros
+                            </div>
+                        </div>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <p>&copy; 2024 Tu Nombre. Todos los derechos reservados.</p>
+        </div>
+    </footer>
+
+    <script src="script.js"></script>
+</body>
+</html> 

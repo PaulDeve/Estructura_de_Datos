@@ -1,0 +1,270 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tienda Online - Moda | E-commerce Completo</title>
+    <meta name="description" content="E-commerce completo desarrollado con React y Node.js. Incluye carrito de compras, pasarela de pagos, gestión de inventario y panel de administración.">
+    <link rel="stylesheet" href="styles.css">
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap" rel="stylesheet">
+</head>
+<body>
+    <!-- Header -->
+    <header class="header">
+        <nav class="nav">
+            <div class="nav-brand">
+                <i class="fas fa-shopping-bag"></i>
+                <span>FashionStore</span>
+            </div>
+            <ul class="nav-menu">
+                <li><a href="#inicio" class="nav-link">Inicio</a></li>
+                <li><a href="#productos" class="nav-link">Productos</a></li>
+                <li><a href="#caracteristicas" class="nav-link">Características</a></li>
+                <li><a href="#tecnologias" class="nav-link">Tecnologías</a></li>
+                <li><a href="#contacto" class="nav-link">Contacto</a></li>
+            </ul>
+            <div class="nav-toggle">
+                <span></span>
+                <span></span>
+                <span></span>
+            </div>
+        </nav>
+    </header>
+
+    <!-- Hero Section -->
+    <section id="inicio" class="hero">
+        <div class="hero-content">
+            <h1 class="hero-title">
+                <span class="title-line">Tienda Online</span>
+                <span class="title-line highlight">Moda</span>
+            </h1>
+            <p class="hero-description">
+                E-commerce completo desarrollado con React y Node.js. Incluye carrito de compras, 
+                pasarela de pagos, gestión de inventario y panel de administración.
+            </p>
+            <div class="hero-buttons">
+                <button class="btn btn-primary">Ver Demo</button>
+                <button class="btn btn-secondary">Código Fuente</button>
+            </div>
+        </div>
+        <div class="hero-visual">
+            <div class="hero-image">
+                <div class="image-placeholder">
+                    <i class="fas fa-mountain"></i>
+                    <i class="fas fa-sun"></i>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Productos Section -->
+    <section id="productos" class="products">
+        <div class="container">
+            <h2 class="section-title">Productos Destacados</h2>
+            <div class="products-grid">
+                <div class="product-card" data-aos="fade-up">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/4A90E2/FFFFFF?text=Producto+1" alt="Producto 1">
+                    </div>
+                    <div class="product-info">
+                        <h3>Vestido Elegante</h3>
+                        <p class="price">$89.99</p>
+                        <button class="btn btn-add">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/50C878/FFFFFF?text=Producto+2" alt="Producto 2">
+                    </div>
+                    <div class="product-info">
+                        <h3>Blazer Moderno</h3>
+                        <p class="price">$129.99</p>
+                        <button class="btn btn-add">Agregar al Carrito</button>
+                    </div>
+                </div>
+                <div class="product-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="product-image">
+                        <img src="https://via.placeholder.com/300x400/F39C12/FFFFFF?text=Producto+3" alt="Producto 3">
+                    </div>
+                    <div class="product-info">
+                        <h3>Jeans Premium</h3>
+                        <p class="price">$79.99</p>
+                        <button class="btn btn-add">Agregar al Carrito</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Características Section -->
+    <section id="caracteristicas" class="features">
+        <div class="container">
+            <h2 class="section-title">Características Principales</h2>
+            <div class="features-grid">
+                <div class="feature-card" data-aos="fade-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-shopping-cart"></i>
+                    </div>
+                    <h3>Carrito de Compras</h3>
+                    <p>Gestión completa del carrito con persistencia de datos y sincronización en tiempo real.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-up">
+                    <div class="feature-icon">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Pasarela de Pagos</h3>
+                    <p>Integración segura con Stripe para procesamiento de pagos online.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-left">
+                    <div class="feature-icon">
+                        <i class="fas fa-boxes"></i>
+                    </div>
+                    <h3>Gestión de Inventario</h3>
+                    <p>Control completo del stock con alertas automáticas y gestión de productos.</p>
+                </div>
+                <div class="feature-card" data-aos="fade-right">
+                    <div class="feature-icon">
+                        <i class="fas fa-chart-line"></i>
+                    </div>
+                    <h3>Panel de Administración</h3>
+                    <p>Dashboard completo con estadísticas, gestión de usuarios y análisis de ventas.</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Tecnologías Section -->
+    <section id="tecnologias" class="technologies">
+        <div class="container">
+            <h2 class="section-title">Tecnologías Utilizadas</h2>
+            <div class="tech-grid">
+                <div class="tech-card" data-aos="zoom-in">
+                    <div class="tech-icon react">
+                        <i class="fab fa-react"></i>
+                    </div>
+                    <h3>React</h3>
+                    <p>Frontend moderno y reactivo</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="100">
+                    <div class="tech-icon node">
+                        <i class="fab fa-node-js"></i>
+                    </div>
+                    <h3>Node.js</h3>
+                    <p>Backend escalable y eficiente</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="200">
+                    <div class="tech-icon mongo">
+                        <i class="fas fa-database"></i>
+                    </div>
+                    <h3>MongoDB</h3>
+                    <p>Base de datos NoSQL flexible</p>
+                </div>
+                <div class="tech-card" data-aos="zoom-in" data-aos-delay="300">
+                    <div class="tech-icon stripe">
+                        <i class="fas fa-credit-card"></i>
+                    </div>
+                    <h3>Stripe</h3>
+                    <p>Procesamiento de pagos seguro</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Contacto Section -->
+    <section id="contacto" class="contact">
+        <div class="container">
+            <h2 class="section-title">¿Interesado en el Proyecto?</h2>
+            <div class="contact-content">
+                <div class="contact-info">
+                    <h3>Ponte en Contacto</h3>
+                    <p>¿Te gustaría implementar algo similar o tienes alguna pregunta sobre el proyecto?</p>
+                    <div class="contact-methods">
+                        <div class="contact-method">
+                            <i class="fas fa-envelope"></i>
+                            <span>info@fashionstore.com</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-phone"></i>
+                            <span>+1 (555) 123-4567</span>
+                        </div>
+                        <div class="contact-method">
+                            <i class="fas fa-map-marker-alt"></i>
+                            <span>Madrid, España</span>
+                        </div>
+                    </div>
+                </div>
+                <form class="contact-form">
+                    <div class="form-group">
+                        <input type="text" placeholder="Nombre completo" required>
+                    </div>
+                    <div class="form-group">
+                        <input type="email" placeholder="Correo electrónico" required>
+                    </div>
+                    <div class="form-group">
+                        <textarea placeholder="Mensaje" rows="5" required></textarea>
+                    </div>
+                    <button type="submit" class="btn btn-primary">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <div class="footer-brand">
+                    <i class="fas fa-shopping-bag"></i>
+                    <span>FashionStore</span>
+                </div>
+                <div class="footer-links">
+                    <a href="#inicio">Inicio</a>
+                    <a href="#productos">Productos</a>
+                    <a href="#caracteristicas">Características</a>
+                    <a href="#tecnologias">Tecnologías</a>
+                </div>
+                <div class="footer-social">
+                    <a href="#"><i class="fab fa-github"></i></a>
+                    <a href="#"><i class="fab fa-linkedin"></i></a>
+                    <a href="#"><i class="fab fa-twitter"></i></a>
+                </div>
+            </div>
+            <div class="footer-bottom">
+                <p>&copy; 2024 FashionStore. Todos los derechos reservados.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Carrito Flotante -->
+    <div class="floating-cart">
+        <div class="cart-icon">
+            <i class="fas fa-shopping-cart"></i>
+            <span class="cart-count">0</span>
+        </div>
+    </div>
+
+    <!-- Modal del Producto -->
+    <div class="modal" id="productModal">
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <div class="modal-body">
+                <div class="modal-image">
+                    <img src="" alt="Producto">
+                </div>
+                <div class="modal-info">
+                    <h2 class="modal-title"></h2>
+                    <p class="modal-description"></p>
+                    <p class="modal-price"></p>
+                    <div class="modal-actions">
+                        <button class="btn btn-primary">Agregar al Carrito</button>
+                        <button class="btn btn-secondary">Ver Detalles</button>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>

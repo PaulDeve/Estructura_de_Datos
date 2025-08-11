@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="UTF-8">
+<title>Speed Test Simple</title>
+<style>
+    body {
+        font-family: Arial, sans-serif;
+        background: #0d1117;
+        color: #fff;
+        text-align: center;
+        padding: 40px;
+    }
+    h1 { color: #58a6ff; }
+    .result {
+        font-size: 1.5rem;
+        margin-top: 20px;
+    }
+    button {
+        background: #238636;
+        color: white;
+        border: none;
+        padding: 10px 20px;
+        font-size: 1.2rem;
+        border-radius: 8px;
+        cursor: pointer;
+        margin-top: 20px;
+    }
+    button:hover { background: #2ea043; }
+</style>
+</head>
+<body>
+
+<h1>Speed Test - HTML + JS</h1>
+<p>Haz clic para medir tu velocidad de descarga y ping</p>
+<button onclick="startTest()">Iniciar Prueba</button>
+
+<div class="result" id="ping"></div>
+<div class="result" id="download"></div>
+
+<script>
+async function startTest() {
+    document.getElementById("ping").textContent = "Midiendo ping...";
+    document.getElementById("download").textContent = "Midiendo descarga...";
+
+    const testFile = "https://speed.hetzner.de/10MB.bin"; // archivo rápido
+    const fileSizeMB = 10; // tamaño del archivo en MB
+
+    // 🔹 Medir Ping
+    let pingStart = performance.now();
+    await fetch(testFile, { method: "HEAD" });
+    let pingEnd = performance.now();
+    let ping = (pingEnd - pingStart).toFixed(2);
+
+    document.getElementById("ping").textContent = `Ping: ${ping} ms`;
+
+    // 🔹 Medir Descarga
+    let startTime = performance.now();
+    let response = await fetch(testFile);
+    await response.blob();
+    let endTime = performance.now();
+
+    let duration = (endTime - startTime) / 1000; // en segundos
+    let speedMbps = ((fileSizeMB * 8) / duration).toFixed(2);
+
+    document.getElementById("download").textContent = `Descarga: ${speedMbps} Mbps`;
+}
+</script>
+
+</body>
+</html>
